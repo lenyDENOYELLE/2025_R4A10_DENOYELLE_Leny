@@ -38,16 +38,18 @@ module.exports = {
 
   // 6) Renvoyer la longueur du tableau
   B6() {
-    // Implémentation ici
+    return getEmployees().length;
   },
 
   // 7) Remplacer le "o" de Theo par un "a", et renvoyer le tableau modifié
   B7() {
-    // Implémentation ici
+    let employees = getEmployees();
+    employees[1].name.replace('o', 'a');
+    return employees;
   },
 
   // 8) Renvoyer un tableau qui ne contient que les personnes ayant au moins un "e" dans leur nom
   B8() {
-    // Implémentation ici
+    return getEmployees().filter((emp) => emp.name.includes('e'));
   },
 };

@@ -10,6 +10,23 @@ module.exports = {
   Renvoyer le tableau final.
 */
   F1() {
-
+    let table = [];
+    for (let i = 1 ; i <= 35 ; i++){
+      if (i % 3 == 0){
+        if (i % 5 == 0){
+          table.push("Python");
+        }
+        else{
+          table.push("JavaScript");
+        }
+      }
+      else if (i % 5 == 0){
+        table.push("TypeScript");
+      }
+      else{
+        table.push(i);
+      }
+    }
+    return table;
   },
 };
