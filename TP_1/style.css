@@ -1,0 +1,31 @@
+* {
+    border: 1px;
+    border-color: black;
+}
+
+header{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header{
+    background-color: aqua;
+}
+body{
+    background-color: blueviolet;
+}
+footer{
+    background-color:honeydew ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu{
+    
+}
+
