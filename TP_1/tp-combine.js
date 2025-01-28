@@ -13,27 +13,27 @@ function getEmployees() {
 module.exports = {
   // 1) Renvoyer un nouveau tableau qui ne garde que les personnes dont le nom se termine par un "e"
   B1() {
-    // Implémentation ici
+    return getEmployees().filter((emp) => emp.name.endsWith("e"));
   },
 
   // 2) Trouver la première personne dont l'âge est inférieur à 30
   B2() {
-    // Implémentation ici
+    return getEmployees().find((emp) => emp.age < 30);
   },
 
   // 3) Renvoyer l'index où se trouve "Jeremy"
   B3() {
-    // Implémentation ici
+    return getEmployees().findIndex((emp) => emp.name == "Jeremy");
   },
 
   // 4) Trier le tableau par âge des personnes
   B4() {
-    // Implémentation ici
+    return getEmployees().sort((emp, emp2) => emp.age - emp2.age);
   },
 
   // 5) Ajouter Kasimu à la fin du tableau, il a 38 ans, et renvoyer le tableau modifié
   B5() {
-    // Implémentation ici
+    return getEmployees().push({name: "Kasimu", age: "38"});
   },
 
   // 6) Renvoyer la longueur du tableau
