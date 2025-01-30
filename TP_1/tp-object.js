@@ -27,24 +27,25 @@ module.exports = {
 
   // 3) Renvoyer les clés de l'objet sous forme de tableau
   Q3() {
-    return getObject().keys();
+    return Object.keys(getObject());
   },
 
   // 4) --- Supprimée ---
 
   // 5) Ajouter la propriété email à myObject et renvoyer l'objet modifié
   Q5() {
-    let myObject = getObject();
-    myObject.push({email: "dshdu@megail.com"});
-    return myObject;
+    let object = getObject();
+    object.email = 'test.test@email.com';
+    return object;
   },
 
   // 6) Ajouter une propriété dynamique étant le résultat de la concaténation des chaines hello et world et dont la valeur est true
   // renvoyer l'objet modifié
   Q6() {
-    // Implémentation ici
+      let object = getObject();
+      object["Hello".concat("World")] = true;
+      return object;
   },
-
   // 7) Supprimer la propriété isBestObject et renvoyer l'objet
   Q7() {
     let object = getObject();
@@ -54,6 +55,6 @@ module.exports = {
 
   // 8) Vérifier que la propriété description existe dans l'objet, renvoyer un booléen
   Q8() {
-    // Implémentation ici
+    return "description" in getObject();
   },
 };
