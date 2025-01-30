@@ -8,7 +8,7 @@ module.exports = {
 
   // 2) Vérifier qu'il n'y a qu'un seul caractère '@' dans email. Renvoyer un booléen
   Q2() {
-    return email.search('@') === 1;
+    return email.indexOf('@') == email.lastIndexOf('@') && email.indexOf('@') != -1 ;
   },
 
   // 3) Renvoyer l'index du caractère '@'
@@ -18,21 +18,21 @@ module.exports = {
 
   // 4) Renvoyer la sous-chaîne se situant après le caractère '@'
   Q4() {
-    return email.slice(Q3());
+    return email.slice(email.indexOf('@') + 1);
   },
 
   // 5) Renvoyer la variable en majuscule
   Q5() {
-    // Implémentation ici
+    return email.toUpperCase();
   },
 
   // 6) Renvoyer le type de la variable email
   Q6() {
-    // Implémentation ici
+    return typeof(email);
   },
 
   // 7) Changez email.com par gmail.com, renvoyez la chaine modifiée
   Q7() {
-    // Implémentation ici
+    return email.replace('email.com', 'gmail.com');
   }
 };
