@@ -1,0 +1,51 @@
+* {
+    background-color: lightblue;
+}
+
+header{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0px;
+}
+
+header{
+}
+
+body{
+}
+
+main{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#base{
+    background-color: cornflowerblue;
+    display: inline-flex;
+    
+}
+
+.card{
+    border: solid;
+}
+
+article{
+    background-color: dimgrey;
+    padding: 12px;
+}
+
+footer{
+    background-color:honeydew ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu{
+    border: 12px;
+}
+
