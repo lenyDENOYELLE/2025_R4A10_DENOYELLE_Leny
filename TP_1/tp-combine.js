@@ -33,7 +33,9 @@ module.exports = {
 
   // 5) Ajouter Kasimu à la fin du tableau, il a 38 ans, et renvoyer le tableau modifié
   B5() {
-    return getEmployees().push({name: "Kasimu", age: "38"});
+    let employees = getEmployees();
+    employees.push({name: "Kasimu" , age: 38});
+    return employees;
   },
 
   // 6) Renvoyer la longueur du tableau
@@ -44,7 +46,7 @@ module.exports = {
   // 7) Remplacer le "o" de Theo par un "a", et renvoyer le tableau modifié
   B7() {
     let employees = getEmployees();
-    employees[1].name.replace('o', 'a');
+    employees.find((person) => person.name === "Theo").name = employees.find((person) => person.name === "Theo").name.replace('o', 'a');
     return employees;
   },
 
