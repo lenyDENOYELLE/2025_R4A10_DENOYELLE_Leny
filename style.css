@@ -10,30 +10,36 @@ header{
     margin: 0px;
 }
 
-header{
-}
-
-body{
-}
-
 main{
     margin-left: 40px;
     margin-right: 40px;
 }
 
-#base{
-    background-color: cornflowerblue;
-    display: inline-flex;
-    
-}
-
 .card{
+    padding: none;
     border: solid;
+    border-width: 2px;
 }
 
-article{
-    background-color: dimgrey;
-    padding: 12px;
+
+.imgcard {
+    text-align: center;
+    height: 100;
+    padding: none;
+    align-content: center;
+}
+
+.contentcard {
+    padding: 10px;
+}
+
+.grid {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    row-gap: 10px;
 }
 
 footer{
@@ -49,3 +55,28 @@ a{
     border: 12px;
 }
 
+@media screen and (width >= 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card{
+        max-width: 600px;
+    }
+}
+
+@media screen and (width >= 1024px) {
+    .card{
+        max-width: 768px;
+    }
+}
+  
+@media screen and (width >= 1200px){
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card {
+        max-width: 1024px;
+    }
+}
+  

@@ -22,13 +22,13 @@ Cette page doit être implémentée de manière à ce qu'elle soit responsive, e
 
 - Les breakpoints utilisés sont 768px, 1024px et 1200px. Considérez `mobile` tout ce qui est en-dessous de 768px.
 - Sur mobile, la navigation dans le header est remplacée par un simple bouton. Ce bouton est caché dans les résolutions plus hautes et c'est la liste qui est visible
-- La liste de cartes suit les principes suivants: 1 colonne sur mobile, 2 colonnes entre 768px et 1200px, 3 colonnes au-dessus
-- Pas besoin de mettre de vraies images, vous pouvez simplement centrer du texte dans la partie haute de la carte
+- La liste de cartes suit les principes suivants: 1 colonne sur mobile, 2 colonnes entre 768px et 1200px, 3 colonnes au-dessus V
+- Pas besoin de mettre de vraies images, vous pouvez simplement centrer du texte dans la partie haute de la carte V
 - La largeur maximale disponible pour la liste des cartes est la suivante:
-  - mobile: tout l'écran
-  - 768px+ - 600px
-  - 1024px+ - 768px
-  - 1200px+ - 1024px
+  - mobile: tout l'écran V
+  - 768px+ - 600px V
+  - 1024px+ - 768px V
+  - 1200px+ - 1024px V
 - Sur mobile, le footer est sur une colonne et le texte est centré. Au dessus, il est sur 2 colonnes
 
 ### Quelques conseils
@@ -57,11 +57,11 @@ Les versions 16 et 18 devraient également fonctionner.
 
 La partie JS se divise en plusieurs fichiers:
 
-- tp-array
-- tp-string
-- tp-object
-- tp-combine
-- tp-controle
+- tp-array V
+- tp-string V
+- tp-object V
+- tp-combine V
+- tp-controle V
 
 Je vous conseille de les faire dans l'ordre mais vous êtes libres de commencer par celui que vous voulez.
 
