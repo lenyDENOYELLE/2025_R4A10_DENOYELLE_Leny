@@ -21,7 +21,7 @@ Vous nommerez votre fichier html `index.html`, et coderez les styles dans un fic
 Cette page doit être implémentée de manière à ce qu'elle soit responsive, et doit respecter les points suivants:
 
 - Les breakpoints utilisés sont 768px, 1024px et 1200px. Considérez `mobile` tout ce qui est en-dessous de 768px.
-- Sur mobile, la navigation dans le header est remplacée par un simple bouton. Ce bouton est caché dans les résolutions plus hautes et c'est la liste qui est visible
+- Sur mobile, la navigation dans le header est remplacée par un simple bouton. Ce bouton est caché dans les résolutions plus hautes et c'est la liste qui est visible V
 - La liste de cartes suit les principes suivants: 1 colonne sur mobile, 2 colonnes entre 768px et 1200px, 3 colonnes au-dessus V
 - Pas besoin de mettre de vraies images, vous pouvez simplement centrer du texte dans la partie haute de la carte V
 - La largeur maximale disponible pour la liste des cartes est la suivante:

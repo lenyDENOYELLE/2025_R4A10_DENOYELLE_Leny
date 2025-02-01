@@ -1,18 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
 * {
     background-color: lightblue;
 }
 
-header{
+header, footer{
+    
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+header {
     align-items: flex-start;
     display: flex;
-    justify-content: space-between;
     padding: 15px;
-    margin: 0px;
+    justify-content: space-between;
+
+}
+footer{
+    padding-top: 0px;
+}
+
+ul {
+    list-style: none;
+
+}
+
+#logopage{
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#footerlinkscontainer {
+    width: fit-content;
+    margin: auto;
+    align-content: center;
+    justify-content: space-between;
 }
 
 main{
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .card{
@@ -39,25 +85,39 @@ main{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
-    row-gap: 10px;
-}
-
-footer{
-    background-color:honeydew ;
+    row-gap: 20px;
 }
 
 a{
     text-decoration: none;
     color: black;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-#menu{
-    border: 12px;
+
+nav.menu{
+    display: none;
 }
 
 @media screen and (width >= 768px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    button.menu {
+        display: none;
+    }
+    nav.menu {
+        display: inline-block;
+    }
+
+    footer {
+        align-items: flex-start;
+        display: flex;
+    }
+
+    #footerlinkscontainer{
+        display: flex;
     }
 
     .card{
@@ -70,7 +130,7 @@ a{
         max-width: 768px;
     }
 }
-  
+
 @media screen and (width >= 1200px){
     .grid {
         grid-template-columns: repeat(3, 1fr);
@@ -79,4 +139,3 @@ a{
         max-width: 1024px;
     }
 }
-  
