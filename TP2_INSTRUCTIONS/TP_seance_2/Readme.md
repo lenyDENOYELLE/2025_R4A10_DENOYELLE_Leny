@@ -23,7 +23,7 @@ Vous pouvez utiliser ChatGPT pour cette partie (mais je doute qu'il vous sera ut
   - Le header
   - La section "Virtual Healthcare for you"
   - La section "Nos services"
-  - What our customers are saying // PAS CA ATTENTION
+  - What our customers are saying
   - Le footer
 
 - Les boutons "View All", "Learn More", "Consult Today" (qui sont en réalité des liens) - n'auront aucune fonctionnalité attachée, pour ce TP vous les implémenterez en
