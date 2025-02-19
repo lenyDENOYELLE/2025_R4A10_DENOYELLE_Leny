@@ -1,6 +1,6 @@
-<p>home-page works!</p>
+<h1>Liste des voyages</h1>
 <ul class="grid">
   @for (voyage of listevoyages; track $index) {
-  <app-card voyage="{{ voyage }}" ></app-card>
+  <app-card [voyage]=voyage ></app-card>
   }
 </ul>

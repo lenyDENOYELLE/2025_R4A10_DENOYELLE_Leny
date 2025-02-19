@@ -12,7 +12,10 @@ export type Voyage = {
 
 
 export class VoyageServiceService {
-  private voyages: Voyage[] = [];
+  private voyages: Voyage[] = [
+    ({ destination:'dumb', description: 'dumbitch', prix: 12, id: 'ertret' }),
+    ({ destination:'crumb', description: 'croute de pain', prix: 12, id: 'ttd5ss4a'})
+  ];
 
   constructor(){}
 
