@@ -33,4 +33,13 @@ export class VoyageServiceService {
     }
     return null;
   }
+
+  deleteAvecId(id: string): boolean{
+    let i: number = this.voyages.findIndex((voyage) => voyage.id == id);
+    if (i != -1){
+      this.voyages.splice(i, 1);
+      return true;
+    }
+    return false;
+  }
 }

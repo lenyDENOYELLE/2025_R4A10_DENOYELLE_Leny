@@ -2,4 +2,5 @@
     <p>Destination: {{marshall.destination}}</p>
     <p>Description: {{marshall.description}}</p>
     <a [routerLink]="'/voyage/' + marshall.id">Voir plus</a>
+    <app-bouton-suppression id={{marshall.id}}></app-bouton-suppression>
 </li>
