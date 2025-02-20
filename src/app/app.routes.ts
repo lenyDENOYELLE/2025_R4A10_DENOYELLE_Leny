@@ -5,15 +5,19 @@ import { GenereVoyagePageComponent } from './genere-voyage-page/genere-voyage-pa
 
 export const routes: Routes = [
     {
-        component: HomePageComponent,
         path: '',
+        component: HomePageComponent,
     },
     {
-        component: VoyagePageComponent,
         path: 'voyage',
+        component: VoyagePageComponent,
     },
     {
-        component: GenereVoyagePageComponent,
         path: 'generer',
+        component: GenereVoyagePageComponent,
+    },
+    {
+        path: 'voyage/:id',
+        component: VoyagePageComponent,
     },
 ];

@@ -8,7 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.sass'
 })
 export class FooterComponent {
-  getYear(): number {
-    return Date.prototype.getFullYear();
-  }
+  annee: Date = new Date();
 }
