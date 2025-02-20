@@ -19,7 +19,18 @@ export class VoyageServiceService {
 
   constructor(){}
 
-  trouveTout(){
+  trouveTout(): Array<Voyage>{
     return this.voyages;
+  }
+
+  trouveAvecId(id: string): Voyage | null{
+    let i: number = 0;
+    while (i < this.voyages.length){
+      if (this.voyages[i].id == id){
+        return this.voyages[i];
+      }
+      i++;
+    }
+    return null;
   }
 }
