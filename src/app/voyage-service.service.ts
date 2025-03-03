@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { DESTINATIONS, DESCRIPTIONS, PRIX } from './data';
 
 export type Voyage = {
     destination: string;
@@ -41,5 +42,19 @@ export class VoyageServiceService {
       return true;
     }
     return false;
+  }
+
+  genereVoyageAleatoire(): Voyage{
+    let id_dest: number = Math.floor(Math.random() * DESTINATIONS.length);
+    let id_desc: number = Math.floor(Math.random() * DESCRIPTIONS.length);
+    let id_prix: number = Math.floor(Math.random() * PRIX.length);
+    let id_voyage: string = Math.random().toString().replaceAll('.', '');
+    let voyagegenere: Voyage = {
+      destination: DESTINATIONS[id_dest],
+      description: DESCRIPTIONS[id_desc],
+      prix: PRIX[id_prix],
+      id: id_voyage,
+    }
+    return voyagegenere;
   }
 }

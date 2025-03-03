@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Voyage, VoyageServiceService } from '../voyage-service.service';
+import { BoutonSuppressionComponent } from '../bouton-suppression/bouton-suppression.component';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-voyage-page',
   standalone: true,
-  imports: [],
+  imports: [BoutonSuppressionComponent],
   templateUrl: './voyage-page.component.html',
   styleUrl: './voyage-page.component.sass'
 })

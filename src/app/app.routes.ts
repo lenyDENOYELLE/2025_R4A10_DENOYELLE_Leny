@@ -6,8 +6,13 @@ import { PageNonTrouveeComponent } from './page-non-trouvee/page-non-trouvee.com
 
 export const routes: Routes = [
     {
-        path: '',
+        path: 'home',
         component: HomePageComponent,
+    },
+    {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full',
     },
     {
         path: 'generer',
