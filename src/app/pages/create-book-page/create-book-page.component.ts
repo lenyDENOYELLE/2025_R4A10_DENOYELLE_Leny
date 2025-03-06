@@ -16,7 +16,7 @@ export class CreateBookPageComponent {
   //private readonly bookService = inject(BooksInMemoryService);
   private readonly bookService = inject(BookinapiService);
   constructor(
-    private router: Router
+    private router: Router,
   ){}
 
 
