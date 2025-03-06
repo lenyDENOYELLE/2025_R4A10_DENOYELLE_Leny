@@ -3,6 +3,7 @@ import { CreateBookFormComponent } from '../../components/create-book-form/creat
 
 import { Book } from '../../models/book'
 import { BooksInMemoryService } from '../../services/book-inmemory.service';
+import { BookinapiService } from '../../services/book-inapi/bookinapi.service';
 
 @Component({
   selector: 'app-create-book-page',
@@ -12,10 +13,13 @@ import { BooksInMemoryService } from '../../services/book-inmemory.service';
   styleUrl: './create-book-page.component.css',
 })
 export class CreateBookPageComponent {
-  private readonly bookService = inject(BooksInMemoryService);
+  //private readonly bookService = inject(BooksInMemoryService);
+  private readonly bookService = inject(BookinapiService);
 
 
   onBookCreation($book: Book){
+    console.log($book); //TODO ENLEVER LE LOG
     this.bookService.createBook($book);
+
   }
 }

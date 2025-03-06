@@ -25,6 +25,7 @@ export class CreateBookFormComponent {
   });
 
   onSubmit() {
+
     if (this.bookForm.valid) {
       this.bookCreationEventEmitter.emit(this.bookForm.value as Book);
     }
