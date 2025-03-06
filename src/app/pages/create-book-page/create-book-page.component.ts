@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output, inject } from '@angular/core';
 import { CreateBookFormComponent } from '../../components/create-book-form/create-book-form.component';
-
+import { Router } from '@angular/router';
 import { Book } from '../../models/book'
 import { BooksInMemoryService } from '../../services/book-inmemory.service';
 import { BookinapiService } from '../../services/book-inapi/bookinapi.service';
@@ -15,11 +15,12 @@ import { BookinapiService } from '../../services/book-inapi/bookinapi.service';
 export class CreateBookPageComponent {
   //private readonly bookService = inject(BooksInMemoryService);
   private readonly bookService = inject(BookinapiService);
+  constructor(
+    private router: Router
+  ){}
 
 
   onBookCreation($book: Book){
-    console.log($book); //TODO ENLEVER LE LOG
-    this.bookService.createBook($book);
-
+    this.bookService.createBook($book).subscribe(() => {this.router.navigate(['/'])});
   }
 }

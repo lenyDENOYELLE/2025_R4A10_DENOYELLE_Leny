@@ -25,14 +25,14 @@ export class BookinapiService {
     return this.http.get<Book>(this.API_URL + `/books/${book_id}`);
   }
   
-  createBook(book: Book): Observable<{id: number}>{
-    console.log("Passe dans le service");
-    let test = this.http
-    .post<{ ressource_location: number }>(this.API_URL + '/books', book)
-    .pipe(map((data) => ({id: data.ressource_location})));
-    console.log(test);
-    return test;
+  createBook(book: Omit<Book, 'id' | 'coverUrl'>): Observable<number> {
+    return this.http.post<{ id: number }>(`${this.API_URL}/books`, {
+      ...book,
+      coverUrl: 'https://placehold.co/150x200',
+    }).pipe(
+      map((response: { id: number }) => response.id));
   }
+
 /*
   deleteOne(book_id: number): Observable<> {
     return this.http.delete<{}>(this.API_URL + `/books/${book_id}`);
